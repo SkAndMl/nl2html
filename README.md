@@ -20,7 +20,7 @@ The script uses the following techniques to train a 7B model in a single GPU
 # Evaluation Results
 * The number of training instances is 528 and splitting it further into a validatipn/test split would not be ideal for fine-tuning the model.
 * Moreover, the LLaMa-2-7b model is capable of already generating decent HTML code, so finetuning it with more data is only going to enhance the HTML code generating capabilities of the model
-* The training results are shown below
+* The training results are shown below <br>
 <img width="515" alt="Screenshot 2023-12-23 at 11 10 05 AM" src="https://github.com/SkAndMl/nl2html/assets/86184014/c4179975-81c2-4cb8-b54a-5776f0754c52"> <br>
 * As we can see from the results, the loss keeps going down and we can even train it for more steps.
 
@@ -33,6 +33,6 @@ The API deployment has been done using **FastAPI** and **ngrok**. <br>
 To get the API up and running follow the following steps
 * Run the ```api.py``` script from the terminal and copy the public url that it prints out
 * Paste the public url returned by the ```api.py``` file and paste it in the ```<PUBLIC-URL>``` part of the ```query.py``` file
-* Run the query.py file and enter any queries related to HTML
+* Run the query.py file and enter any queries related to HTML <br>
 Here's a sample output
 <img width="1095" alt="Screenshot 2023-12-23 at 11 06 33 AM" src="https://github.com/SkAndMl/nl2html/assets/86184014/fa634df5-849f-44d8-a4b9-ae440b4bc8e3">
